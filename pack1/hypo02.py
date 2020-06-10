@@ -39,6 +39,7 @@ print('chi2 : ', chi2)
 print()
 # python 기반의 카이제곱 검정 지원 모듈
 import scipy.stats as stats
+
 chi2, p, _, _ = stats.chi2_contingency(data2)
 print(chi2, p)  # 3.0 0.5578254003710748
 # p-value(유의확률) : 0.5578 > 0.05(유의수준)이므로 귀무가설 채택. 공부하는 것과 합격여부는 관계가 없다.
